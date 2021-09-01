@@ -4,6 +4,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
+      backgroundImage: theme => ({
+        'hosting': "url('/assets/host.jpg')"
+      }),
+      backgroundPosition: {
+        '33-center': '33% center'
+      },
       gridTemplateColumns: {
         'one': '1fr',
         '11': '1fr 1fr',

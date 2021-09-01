@@ -5,6 +5,7 @@ import SmallCard from '../components/SmallCard'
 import { data } from '../demo-call'
 import { livingData } from '../cards-demo-call'
 import MediumCard from '../components/MediumCard'
+import Hosting from '../components/Hosting'
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -36,11 +37,15 @@ export default function Home({ exploreData, cardsData }) {
         <section>
           <h2 className="text-4xl font-semibold py-8">Live Anywhere</h2>
           <div className="grid grid-cols-80p grid-rows-one mt-0 -mb-6 p-6
-          -mx-6 overflow-scroll sm:grid-cols-4 sm:gap-6 sm:p-3 sm:-ml-3 sm:space-x-3 sm:scrollbar-hide">
+          -mx-6 overflow-x-scroll sm:grid-cols-4 sm:gap-6 sm:p-3 sm:-ml-3 sm:space-x-3 sm:scrollbar-hide">
             {cardsData?.map(item => (
-              <MediumCard key={item.key} img={item.img} title={item.title} />
+              <MediumCard key={item.id} img={item.img} title={item.title} />
             ))}
           </div>
+        </section>
+        <section className="relative py-16">
+          <Hosting  className="relative py-16"/>
+
         </section>
       </main>
     </div>
