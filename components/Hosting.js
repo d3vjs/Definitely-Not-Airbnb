@@ -41,7 +41,7 @@ function Hosting() {
                     Learn more
                 </a>
             </span> */}
-            <div className="text-white absolute top-4 left-12 sm:top-32 sm:left-12">
+            <div className="text-white absolute top-4 left-6 sm:top-32 sm:left-12">
                 <h3 className="text-4xl mb-3 w-64">Try Hosting</h3>
                 <p>Earn extra income and unlock new opportunities.</p>
                 <button className="text-lg bg-white font-bold text-gray-800 px-4 py-2 rounded-lg mt-5">Learn more</button>

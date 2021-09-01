@@ -6,6 +6,7 @@ import { data } from '../demo-call'
 import { livingData } from '../cards-demo-call'
 import MediumCard from '../components/MediumCard'
 import Hosting from '../components/Hosting'
+import Footer from '../components/Footer'
 
 export default function Home({ exploreData, cardsData }) {
   return (
@@ -44,10 +45,11 @@ export default function Home({ exploreData, cardsData }) {
           </div>
         </section>
         <section className="relative py-16">
-          <Hosting  className="relative py-16"/>
-
+          <Hosting className="relative py-16" />
         </section>
+
       </main>
+        <Footer className="flex justify-center"/>
     </div>
   )
 }
